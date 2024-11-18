@@ -2,9 +2,6 @@ package com.example.featuretoggle.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import com.example.featuretoggle.FeatureToggles;
-import com.example.featuretoggle.annotation.FeatureToggle;
 import com.example.featuretoggle.service.CosmoCatService;
 
 import java.util.List;
@@ -14,7 +11,6 @@ import java.util.List;
 public class CosmoCatServiceImpl implements CosmoCatService {
 
     @Override
-    @FeatureToggle(FeatureToggles.COSMO_CATS)
     public List<String> getCosmoCats() {
         log.info("Fetching list of Cosmo Cats...");
         return List.of("Milky Way Mittens", "Galactic Purr", "Nebula Fluff", "Starlight Whiskers");
