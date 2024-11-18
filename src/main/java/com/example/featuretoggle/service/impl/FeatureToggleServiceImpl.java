@@ -4,9 +4,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.stereotype.Service;
 
 import com.example.featuretoggle.config.FeatureToggleProperties;
+import com.example.featuretoggle.service.FeatureToggleService;
 
 @Service
-public class FeatureToggleServiceImpl {
+public class FeatureToggleServiceImpl implements FeatureToggleService{
 
     private final ConcurrentHashMap<String, Boolean> featureToggles;
 
