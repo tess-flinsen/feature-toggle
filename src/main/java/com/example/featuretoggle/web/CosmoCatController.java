@@ -12,7 +12,7 @@ import com.example.featuretoggle.service.CosmoCatService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/cosmo-cats")
+@RequestMapping("/v1/cosmocats")
 public class CosmoCatController {
 
     private final CosmoCatService cosmoCatService;
